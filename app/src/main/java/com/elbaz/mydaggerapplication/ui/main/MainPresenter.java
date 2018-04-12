@@ -2,10 +2,14 @@ package com.elbaz.mydaggerapplication.ui.main;
 
 import com.elbaz.mydaggerapplication.data.network.UserService;
 import com.elbaz.mydaggerapplication.data.network.model.User;
+import com.elbaz.mydaggerapplication.data.network.response.UserResponse;
 
 import java.util.List;
 
+import rx.Subscriber;
 import rx.Subscription;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.schedulers.Schedulers;
 import rx.subscriptions.CompositeSubscription;
 
 /**
@@ -16,13 +20,12 @@ public class MainPresenter<V extends MainContract.IMainView> implements MainCont
 
     private final UserService service;
 
-    private CompositeSubscription subscriptions;
+    private Subscription subscription;
 
     private V view;
 
     public MainPresenter(UserService service) {
         this.service = service;
-        subscriptions = new CompositeSubscription();
     }
 
     @Override
@@ -33,22 +36,42 @@ public class MainPresenter<V extends MainContract.IMainView> implements MainCont
     @Override
     public void onDetach() {
         this.view = null;
-        subscriptions.unsubscribe();
+        if(subscription != null) subscription.unsubscribe();
     }
 
     @Override
     public void onViewInitialized() {
-        Subscription subscription = service.getUserList(new UserService.GetUserListCallback() {
-            @Override
-            public void onSuccess(List<User> users) {
-                view.showUserList(users);
-            }
 
-            @Override
-            public void onError(String msg) {
-                view.showMessage(msg);
-            }
-        });
-        subscriptions.add(subscription);
+    }
+
+    @Override
+    public void login(String username, String password) {
+        view.showProgressBar();
+        subscription = service.login(username, password)
+                .subscribeOn(Schedulers.immediate())
+                .observeOn(Schedulers.immediate())
+                .subscribe(new Subscriber<UserResponse>() {
+                    @Override
+                    public void onCompleted() {
+                        //
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        view.hideProgressBar();
+                        view.formError();
+                    }
+
+                    @Override
+                    public void onNext(UserResponse user) {
+                        if(user.getCode() == 200) {
+                            view.hideProgressBar();
+                            view.goToNextActivity();
+                        } else {
+                            view.hideProgressBar();
+                            view.formError();
+                        }
+                    }
+                });
     }
 }

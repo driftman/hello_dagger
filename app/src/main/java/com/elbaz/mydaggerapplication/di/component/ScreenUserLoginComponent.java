@@ -1,7 +1,7 @@
 package com.elbaz.mydaggerapplication.di.component;
 
 import com.elbaz.mydaggerapplication.di.SUserScope;
-import com.elbaz.mydaggerapplication.di.module.SUserModule;
+import com.elbaz.mydaggerapplication.di.module.ScreenUserLoginModule;
 import com.elbaz.mydaggerapplication.ui.main.MainActivity;
 
 import dagger.Subcomponent;
@@ -11,8 +11,8 @@ import dagger.Subcomponent;
  */
 
 @SUserScope
-@Subcomponent(modules = {SUserModule.class})
-public interface SUserComponent {
+@Subcomponent(modules = {ScreenUserLoginModule.class})
+public interface ScreenUserLoginComponent {
 
     void inject(MainActivity activity);
 }

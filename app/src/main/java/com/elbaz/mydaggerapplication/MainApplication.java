@@ -4,11 +4,11 @@ import android.app.Application;
 
 import com.elbaz.mydaggerapplication.di.component.ApplicationComponent;
 import com.elbaz.mydaggerapplication.di.component.DaggerApplicationComponent;
-import com.elbaz.mydaggerapplication.di.component.SUserComponent;
+import com.elbaz.mydaggerapplication.di.component.ScreenUserLoginComponent;
 import com.elbaz.mydaggerapplication.di.component.UserComponent;
 import com.elbaz.mydaggerapplication.di.module.ApplicationModule;
 import com.elbaz.mydaggerapplication.di.module.NetworkModule;
-import com.elbaz.mydaggerapplication.di.module.SUserModule;
+import com.elbaz.mydaggerapplication.di.module.ScreenUserLoginModule;
 import com.elbaz.mydaggerapplication.di.module.UserModule;
 
 import java.io.File;
@@ -21,7 +21,7 @@ public class MainApplication extends Application {
 
     ApplicationComponent applicationComponent;
     UserComponent userComponent;
-    SUserComponent sUserComponent;
+    ScreenUserLoginComponent sUserComponent;
 
     @Override
     public void onCreate() {
@@ -50,10 +50,10 @@ public class MainApplication extends Application {
         userComponent = null;
     }
 
-    public SUserComponent plusSUserComponent() {
+    public ScreenUserLoginComponent plusScreenUserLoginComponent() {
         if(sUserComponent == null) {
             sUserComponent = userComponent
-                    .plusSUserComponent(new SUserModule());
+                    .plusScreenUserLoginComponent(new ScreenUserLoginModule());
         }
         return sUserComponent;
     }

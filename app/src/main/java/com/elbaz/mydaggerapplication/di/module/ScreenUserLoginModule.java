@@ -12,9 +12,9 @@ import dagger.Provides;
  */
 
 @Module
-public class SUserModule {
+public class ScreenUserLoginModule {
 
-    public SUserModule() {}
+    public ScreenUserLoginModule() {}
 
     @Provides @SUserScope
     MainPresenter provideMainPresenter(UserService userService) {

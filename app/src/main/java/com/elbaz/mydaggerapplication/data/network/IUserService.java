@@ -1,10 +1,11 @@
 package com.elbaz.mydaggerapplication.data.network;
 
-import com.elbaz.mydaggerapplication.data.network.model.User;
 
-import java.util.List;
+import com.elbaz.mydaggerapplication.data.network.response.UserResponse;
 
-import retrofit2.http.GET;
+import retrofit2.http.Field;
+import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.POST;
 
 import rx.Observable;
 
@@ -14,6 +15,7 @@ import rx.Observable;
 
 public interface IUserService {
 
-    @GET("users")
-    Observable<List<User>> getUserList();
+    @POST("login")
+    @FormUrlEncoded
+    Observable<UserResponse> login(@Field("username") String username, @Field("password")String password);
 }

@@ -22,16 +22,6 @@ public abstract class BaseActivity extends AppCompatActivity implements BaseCont
     }
 
     @Override
-    public void showLoading() {
-        showToast("showing loading!");
-    }
-
-    @Override
-    public void hideLoading() {
-        showToast("hiding loading!");
-    }
-
-    @Override
     public void showMessage(String msg) {
         showToast(msg);
     }

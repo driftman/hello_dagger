@@ -18,7 +18,7 @@ public class UserModule {
     public UserModule() {}
 
     @Provides @UserScope
-    UserService provideUserService(Retrofit retrofit) {
+    public UserService provideUserService(Retrofit retrofit) {
         return new UserService(retrofit.create(IUserService.class));
     }
 

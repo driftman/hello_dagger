@@ -12,10 +12,13 @@ import java.util.List;
 public class MainContract {
 
     public interface IMainPresenter<V extends IMainView> extends BaseContract.IMvpPresenter<V> {
-
+        void login(String username, String password);
     }
 
     public interface IMainView extends BaseContract.IMvpView {
-        void showUserList(List<User> user);
+        void showProgressBar();
+        void hideProgressBar();
+        void goToNextActivity();
+        void formError();
     }
 }

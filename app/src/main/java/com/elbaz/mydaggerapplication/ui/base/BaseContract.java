@@ -8,10 +8,6 @@ public class BaseContract {
 
     public interface IMvpView {
 
-        void showLoading();
-
-        void hideLoading();
-
         void showMessage(String msg);
 
     }
