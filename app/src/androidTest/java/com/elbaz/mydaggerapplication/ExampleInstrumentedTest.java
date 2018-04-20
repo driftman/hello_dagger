@@ -2,12 +2,20 @@ package com.elbaz.mydaggerapplication;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
+import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
+import com.elbaz.mydaggerapplication.ui.main.MainActivity;
+
+import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import static org.junit.Assert.*;
+import static android.support.test.espresso.Espresso.*;
+import static android.support.test.espresso.matcher.ViewMatchers.*;
+import static android.support.test.espresso.assertion.ViewAssertions.*;
+import static android.support.test.espresso.action.ViewActions.*;
 
 /**
  * Instrumented test, which will execute on an Android device.
@@ -16,11 +24,22 @@ import static org.junit.Assert.*;
  */
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTest {
+
+    @Rule
+    public ActivityTestRule<MainActivity> mActivityRule =
+            new ActivityTestRule(MainActivity.class);
+
     @Test
     public void useAppContext() throws Exception {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
-
         assertEquals("com.elbaz.mydaggerapplication", appContext.getPackageName());
+    }
+
+    @Test
+    public void loginTest() {
+        onView(withId(R.id.edit_text_username)).perform(typeText("username"));
+        onView(withId(R.id.edit_text_password)).perform(typeText("password"));
+        onView(withId(R.id.button_login)).perform(click());
     }
 }

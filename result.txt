@@ -1,0 +1,277 @@
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stream=
+com.elbaz.mydaggerapplication.ExampleInstrumentedTest:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=listGoesOverTheFold
+INSTRUMENTATION_STATUS: class=com.elbaz.mydaggerapplication.ExampleInstrumentedTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stream=
+Error in listGoesOverTheFold(com.elbaz.mydaggerapplication.ExampleInstrumentedTest):
+android.support.test.espresso.AmbiguousViewMatcherException: 'with text: is "CEDRE"' matches multiple views in the hierarchy.
+Problem views are marked with '****MATCHES****' below.
+
+View Hierarchy:
++>DecorView{id=-1, visibility=VISIBLE, width=720, height=1280, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=WM.LayoutParams{(0,0)(fillxfill) ty=1 fl=#81810100 wanim=0x103045b needsMenuKey=2}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++->LinearLayout{id=-1, visibility=VISIBLE, width=720, height=1280, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@90550d2, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++-->ViewStub{id=16909430, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@a4f95a3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+|
++-->FrameLayout{id=-1, visibility=VISIBLE, width=720, height=1232, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@5aa8459, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=48.0, child-count=1} 
+|
++--->ActionBarOverlayLayout{id=2131165229, res-name=decor_content_parent, visibility=VISIBLE, width=720, height=1232, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@13a16cc, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++---->ContentFrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=720, height=1120, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.ActionBarOverlayLayout$LayoutParams@b7e282a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=112.0, child-count=1} 
+|
++----->RelativeLayout{id=-1, visibility=VISIBLE, width=720, height=1120, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@d57d3b8, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++------>LinearLayout{id=-1, visibility=VISIBLE, width=656, height=502, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.RelativeLayout$LayoutParams@ddbc9cd, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=309.0, child-count=5} 
+|
++------->AppCompatTextView{id=-1, visibility=VISIBLE, width=656, height=110, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@f9f9282, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=CEDRE, input-type=0, ime-target=false, has-links=false} ****MATCHES****
+|
++------->AppCompatEditText{id=2131165234, res-name=edit_text_username, visibility=VISIBLE, width=656, height=120, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=true, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@4b561d0, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x20001 imeOptions=0x48000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Nom d'utilisateur label=null packageName=null fieldId=0 fieldName=null extras=null ], x=0.0, y=110.0, text=, hint=Nom d'utilisateur, input-type=131073, ime-target=true, has-links=false} 
+|
++------->AppCompatEditText{id=2131165233, res-name=edit_text_password, visibility=VISIBLE, width=656, height=120, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@be835c9, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x81 imeOptions=0x4000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Mot de passe label=null packageName=null fieldId=0 fieldName=null extras=null ], x=0.0, y=230.0, text=, hint=Mot de passe, input-type=129, ime-target=false, has-links=false} 
+|
++------->AppCompatButton{id=2131165220, res-name=button_login, visibility=VISIBLE, width=656, height=120, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@4b854ce, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=382.0, text=Se connecter, input-type=0, ime-target=false, has-links=false} 
+|
++------->ProgressBar{id=2131165268, res-name=progress_bar, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@1a70fef, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+|
++---->ActionBarContainer{id=2131165193, res-name=action_bar_container, visibility=VISIBLE, width=720, height=112, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.ActionBarOverlayLayout$LayoutParams@988efda, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++----->Toolbar{id=2131165191, res-name=action_bar, visibility=VISIBLE, width=720, height=112, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@9439ae8, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++------>AppCompatTextView{id=-1, visibility=VISIBLE, width=123, height=54, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.Toolbar$LayoutParams@26bd501, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=29.0, text=CEDRE, input-type=0, ime-target=false, has-links=false} ****MATCHES****
+|
++------>ActionMenuView{id=-1, visibility=VISIBLE, width=0, height=112, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.Toolbar$LayoutParams@2962fa6, tag=null, root-is-layout-requested=false, has-input-connection=false, x=720.0, y=0.0, child-count=0} 
+|
++----->ActionBarContextView{id=2131165199, res-name=action_context_bar, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@cdb0de7, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=0} 
+|
++->View{id=16908335, res-name=statusBarBackground, visibility=VISIBLE, width=720, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@f2b7d94, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+|
+	at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+	at java.lang.Thread.getStackTrace(Thread.java:580)
+	at android.support.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:90)
+	at android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:52)
+	at android.support.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:312)
+	at android.support.test.espresso.ViewInteraction.check(ViewInteraction.java:291)
+	at com.elbaz.mydaggerapplication.ExampleInstrumentedTest.listGoesOverTheFold(ExampleInstrumentedTest.java:33)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:433)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:58)
+	at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:375)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1960)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=listGoesOverTheFold
+INSTRUMENTATION_STATUS: class=com.elbaz.mydaggerapplication.ExampleInstrumentedTest
+INSTRUMENTATION_STATUS: stack=android.support.test.espresso.AmbiguousViewMatcherException: 'with text: is "CEDRE"' matches multiple views in the hierarchy.
+Problem views are marked with '****MATCHES****' below.
+
+View Hierarchy:
++>DecorView{id=-1, visibility=VISIBLE, width=720, height=1280, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=WM.LayoutParams{(0,0)(fillxfill) ty=1 fl=#81810100 wanim=0x103045b needsMenuKey=2}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++->LinearLayout{id=-1, visibility=VISIBLE, width=720, height=1280, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@90550d2, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++-->ViewStub{id=16909430, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@a4f95a3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+|
++-->FrameLayout{id=-1, visibility=VISIBLE, width=720, height=1232, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@5aa8459, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=48.0, child-count=1} 
+|
++--->ActionBarOverlayLayout{id=2131165229, res-name=decor_content_parent, visibility=VISIBLE, width=720, height=1232, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@13a16cc, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++---->ContentFrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=720, height=1120, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.ActionBarOverlayLayout$LayoutParams@b7e282a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=112.0, child-count=1} 
+|
++----->RelativeLayout{id=-1, visibility=VISIBLE, width=720, height=1120, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@d57d3b8, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++------>LinearLayout{id=-1, visibility=VISIBLE, width=656, height=502, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.RelativeLayout$LayoutParams@ddbc9cd, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=309.0, child-count=5} 
+|
++------->AppCompatTextView{id=-1, visibility=VISIBLE, width=656, height=110, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@f9f9282, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=CEDRE, input-type=0, ime-target=false, has-links=false} ****MATCHES****
+|
++------->AppCompatEditText{id=2131165234, res-name=edit_text_username, visibility=VISIBLE, width=656, height=120, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=true, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@4b561d0, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x20001 imeOptions=0x48000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Nom d'utilisateur label=null packageName=null fieldId=0 fieldName=null extras=null ], x=0.0, y=110.0, text=, hint=Nom d'utilisateur, input-type=131073, ime-target=true, has-links=false} 
+|
++------->AppCompatEditText{id=2131165233, res-name=edit_text_password, visibility=VISIBLE, width=656, height=120, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@be835c9, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x81 imeOptions=0x4000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Mot de passe label=null packageName=null fieldId=0 fieldName=null extras=null ], x=0.0, y=230.0, text=, hint=Mot de passe, input-type=129, ime-target=false, has-links=false} 
+|
++------->AppCompatButton{id=2131165220, res-name=button_login, visibility=VISIBLE, width=656, height=120, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@4b854ce, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=382.0, text=Se connecter, input-type=0, ime-target=false, has-links=false} 
+|
++------->ProgressBar{id=2131165268, res-name=progress_bar, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@1a70fef, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+|
++---->ActionBarContainer{id=2131165193, res-name=action_bar_container, visibility=VISIBLE, width=720, height=112, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.ActionBarOverlayLayout$LayoutParams@988efda, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++----->Toolbar{id=2131165191, res-name=action_bar, visibility=VISIBLE, width=720, height=112, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@9439ae8, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++------>AppCompatTextView{id=-1, visibility=VISIBLE, width=123, height=54, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.Toolbar$LayoutParams@26bd501, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=29.0, text=CEDRE, input-type=0, ime-target=false, has-links=false} ****MATCHES****
+|
++------>ActionMenuView{id=-1, visibility=VISIBLE, width=0, height=112, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.Toolbar$LayoutParams@2962fa6, tag=null, root-is-layout-requested=false, has-input-connection=false, x=720.0, y=0.0, child-count=0} 
+|
++----->ActionBarContextView{id=2131165199, res-name=action_context_bar, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@cdb0de7, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=0} 
+|
++->View{id=16908335, res-name=statusBarBackground, visibility=VISIBLE, width=720, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@f2b7d94, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+|
+	at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+	at java.lang.Thread.getStackTrace(Thread.java:580)
+	at android.support.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:90)
+	at android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:52)
+	at android.support.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:312)
+	at android.support.test.espresso.ViewInteraction.check(ViewInteraction.java:291)
+	at com.elbaz.mydaggerapplication.ExampleInstrumentedTest.listGoesOverTheFold(ExampleInstrumentedTest.java:33)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:433)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:58)
+	at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:375)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1960)
+
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=useAppContext
+INSTRUMENTATION_STATUS: class=com.elbaz.mydaggerapplication.ExampleInstrumentedTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=useAppContext
+INSTRUMENTATION_STATUS: class=com.elbaz.mydaggerapplication.ExampleInstrumentedTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 1,397
+There was 1 failure:
+1) listGoesOverTheFold(com.elbaz.mydaggerapplication.ExampleInstrumentedTest)
+android.support.test.espresso.AmbiguousViewMatcherException: 'with text: is "CEDRE"' matches multiple views in the hierarchy.
+Problem views are marked with '****MATCHES****' below.
+
+View Hierarchy:
++>DecorView{id=-1, visibility=VISIBLE, width=720, height=1280, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=WM.LayoutParams{(0,0)(fillxfill) ty=1 fl=#81810100 wanim=0x103045b needsMenuKey=2}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++->LinearLayout{id=-1, visibility=VISIBLE, width=720, height=1280, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@90550d2, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++-->ViewStub{id=16909430, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@a4f95a3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+|
++-->FrameLayout{id=-1, visibility=VISIBLE, width=720, height=1232, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@5aa8459, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=48.0, child-count=1} 
+|
++--->ActionBarOverlayLayout{id=2131165229, res-name=decor_content_parent, visibility=VISIBLE, width=720, height=1232, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@13a16cc, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++---->ContentFrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=720, height=1120, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.ActionBarOverlayLayout$LayoutParams@b7e282a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=112.0, child-count=1} 
+|
++----->RelativeLayout{id=-1, visibility=VISIBLE, width=720, height=1120, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@d57d3b8, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++------>LinearLayout{id=-1, visibility=VISIBLE, width=656, height=502, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.RelativeLayout$LayoutParams@ddbc9cd, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=309.0, child-count=5} 
+|
++------->AppCompatTextView{id=-1, visibility=VISIBLE, width=656, height=110, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@f9f9282, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=CEDRE, input-type=0, ime-target=false, has-links=false} ****MATCHES****
+|
++------->AppCompatEditText{id=2131165234, res-name=edit_text_username, visibility=VISIBLE, width=656, height=120, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=true, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@4b561d0, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x20001 imeOptions=0x48000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Nom d'utilisateur label=null packageName=null fieldId=0 fieldName=null extras=null ], x=0.0, y=110.0, text=, hint=Nom d'utilisateur, input-type=131073, ime-target=true, has-links=false} 
+|
++------->AppCompatEditText{id=2131165233, res-name=edit_text_password, visibility=VISIBLE, width=656, height=120, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@be835c9, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x81 imeOptions=0x4000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Mot de passe label=null packageName=null fieldId=0 fieldName=null extras=null ], x=0.0, y=230.0, text=, hint=Mot de passe, input-type=129, ime-target=false, has-links=false} 
+|
++------->AppCompatButton{id=2131165220, res-name=button_login, visibility=VISIBLE, width=656, height=120, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@4b854ce, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=382.0, text=Se connecter, input-type=0, ime-target=false, has-links=false} 
+|
++------->ProgressBar{id=2131165268, res-name=progress_bar, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@1a70fef, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+|
++---->ActionBarContainer{id=2131165193, res-name=action_bar_container, visibility=VISIBLE, width=720, height=112, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.ActionBarOverlayLayout$LayoutParams@988efda, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++----->Toolbar{id=2131165191, res-name=action_bar, visibility=VISIBLE, width=720, height=112, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@9439ae8, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++------>AppCompatTextView{id=-1, visibility=VISIBLE, width=123, height=54, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.Toolbar$LayoutParams@26bd501, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=29.0, text=CEDRE, input-type=0, ime-target=false, has-links=false} ****MATCHES****
+|
++------>ActionMenuView{id=-1, visibility=VISIBLE, width=0, height=112, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.Toolbar$LayoutParams@2962fa6, tag=null, root-is-layout-requested=false, has-input-connection=false, x=720.0, y=0.0, child-count=0} 
+|
++----->ActionBarContextView{id=2131165199, res-name=action_context_bar, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@cdb0de7, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=0} 
+|
++->View{id=16908335, res-name=statusBarBackground, visibility=VISIBLE, width=720, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@f2b7d94, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+|
+	at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+	at java.lang.Thread.getStackTrace(Thread.java:580)
+	at android.support.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:90)
+	at android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:52)
+	at android.support.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:312)
+	at android.support.test.espresso.ViewInteraction.check(ViewInteraction.java:291)
+	at com.elbaz.mydaggerapplication.ExampleInstrumentedTest.listGoesOverTheFold(ExampleInstrumentedTest.java:33)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:433)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:58)
+	at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:375)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1960)
+
+FAILURES!!!
+Tests run: 2,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1
