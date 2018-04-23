@@ -3,7 +3,8 @@ package net.atos.cedre;
 import android.app.Application;
 
 import net.atos.cedre.di.component.ApplicationComponent;
-import com.atos.cedre.di.component.DaggerApplicationComponent;
+
+import net.atos.cedre.di.component.DaggerApplicationComponent;
 import net.atos.cedre.di.component.ScreenUserLoginComponent;
 import net.atos.cedre.di.component.UserComponent;
 import net.atos.cedre.di.module.ApplicationModule;
