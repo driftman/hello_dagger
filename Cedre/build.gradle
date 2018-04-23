@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
-ext.defaultVersionName = 'V0.1.001'
-ext.defaultVersionCode = '1'
+ext.defaultVersionName = 'V0.1'
+ext.defaultVersionCode = '001'
 
 android {
 
@@ -44,10 +44,20 @@ android {
     }
 
     buildTypes {
+
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+
+        // We are inclunfing the application version name
+        android.applicationVariants.all { variant ->
+            variant.outputs.all {
+                def versionNameCode = "${versionName}.${versionCode}"
+                outputFileName = outputFileName.replace(".apk", "-${versionNameCode}.apk")
+            }
+        }
+
     }
     testOptions {
         unitTests {

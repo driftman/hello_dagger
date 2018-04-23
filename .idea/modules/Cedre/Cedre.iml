@@ -133,7 +133,6 @@
       <excludeFolder url="file://$MODULE_DIR$/../../../Cedre/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/../../../Cedre/build/intermediates/javaPrecompile" />
       <excludeFolder url="file://$MODULE_DIR$/../../../Cedre/build/intermediates/jniLibs" />
-      <excludeFolder url="file://$MODULE_DIR$/../../../Cedre/build/intermediates/lint" />
       <excludeFolder url="file://$MODULE_DIR$/../../../Cedre/build/intermediates/manifests" />
       <excludeFolder url="file://$MODULE_DIR$/../../../Cedre/build/intermediates/merged-not-compiled-resources" />
       <excludeFolder url="file://$MODULE_DIR$/../../../Cedre/build/intermediates/prebuild" />
