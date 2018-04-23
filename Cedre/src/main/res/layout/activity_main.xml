@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.atos.cedre.net.elbaz.cedre.ui.main.MainActivity">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:text="CEDRE"
+            android:textSize="41sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:textColor="@color/primary_text"
+            android:id="@+id/edit_text_username"
+            android:hint="Nom d'utilisateur"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <EditText
+            android:inputType="textPassword"
+            android:textColor="@color/primary_text"
+            android:id="@+id/edit_text_password"
+            android:hint="Mot de passe"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <Button
+            android:id="@+id/button_login"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:text="Se connecter"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

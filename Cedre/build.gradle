@@ -1,0 +1,92 @@
+apply plugin: 'com.android.application'
+
+ext.defaultVersionName = 'V0.1.001'
+ext.defaultVersionCode = '1'
+
+android {
+
+    // actually we will set one flavor dimension
+    flavorDimensions "cedre"
+
+    compileSdkVersion 26
+
+    defaultConfig {
+        applicationId "com.elbaz.mydaggerapplication"
+        minSdkVersion 15
+        targetSdkVersion 26
+        // dynamic version code and name
+        versionName getEnvWithDefault("VERSION", defaultVersionName)
+        versionCode getEnvWithDefault("BUILD", defaultVersionCode).toInteger()
+        // testing
+        testApplicationId "com.elbaz.mydaggerapplication.test"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    // flavors
+    productFlavors {
+        si {
+            dimension "cedre"
+            applicationIdSuffix ".si"
+        }
+        formation {
+            dimension "cedre"
+            applicationIdSuffix ".formation"
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("release.keystore")
+            storePassword 'coolman'
+            keyAlias 'alias_name'
+            keyPassword 'coolman'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+}
+
+def getEnvWithDefault(envVariable, defaultValue) {
+    def envValue = System.getProperty(envVariable);
+    if (envValue == null || envValue.isEmpty()) {
+        envValue = System.getenv(envVariable)
+    }
+    return envValue == null ? defaultValue : envValue
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'org.mockito:mockito-core:1.10.19'
+    testImplementation "org.robolectric:robolectric:3.8"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    // recycler view
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    // retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
+    // rxjava
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'io.reactivex:rxjava:1.1.6'
+    // Gson
+    implementation 'com.google.code.gson:gson:2.8.0'
+    // Dependency Injection Management
+    implementation 'com.google.dagger:dagger:2.15'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.15'
+}
