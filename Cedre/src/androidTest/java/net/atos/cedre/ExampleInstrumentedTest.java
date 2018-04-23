@@ -1,4 +1,4 @@
-package com.atos.cedre;
+package net.atos.cedre;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -8,6 +8,8 @@ import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
 import net.atos.cedre.ui.main.MainActivity;
+
+import com.atos.cedre.R;
 import com.atos.cedre.utils.TestUtils;
 
 import org.junit.Rule;
