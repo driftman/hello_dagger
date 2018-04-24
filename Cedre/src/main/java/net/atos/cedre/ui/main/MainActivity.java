@@ -7,7 +7,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 
 import net.atos.cedre.MainApplication;
-import com.atos.cedre.R;
+import net.atos.cedre.R;
 import net.atos.cedre.ui.base.BaseActivity;
 
 import javax.inject.Inject;

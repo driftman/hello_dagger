@@ -146,8 +146,6 @@
       <excludeFolder url="file://$MODULE_DIR$/../../../Cedre/build/intermediates/transforms" />
       <excludeFolder url="file://$MODULE_DIR$/../../../Cedre/build/intermediates/unitTestConfig" />
       <excludeFolder url="file://$MODULE_DIR$/../../../Cedre/build/outputs" />
-      <excludeFolder url="file://$MODULE_DIR$/../../../Cedre/build/reports" />
-      <excludeFolder url="file://$MODULE_DIR$/../../../Cedre/build/test-results" />
       <excludeFolder url="file://$MODULE_DIR$/../../../Cedre/build/tmp" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 26 Platform" jdkType="Android SDK" />

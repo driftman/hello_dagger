@@ -11,14 +11,14 @@ android {
     compileSdkVersion 26
 
     defaultConfig {
-        applicationId "com.elbaz.mydaggerapplication"
+        applicationId "net.atos.cedre"
         minSdkVersion 15
         targetSdkVersion 26
         // dynamic version code and name
         versionName getEnvWithDefault("VERSION", defaultVersionName)
         versionCode getEnvWithDefault("BUILD", defaultVersionCode).toInteger()
         // testing
-        testApplicationId "com.elbaz.mydaggerapplication.test"
+        testApplicationId "net.atos.cedre.test"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
@@ -79,22 +79,25 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    // JUnit tests
     testImplementation 'org.mockito:mockito-core:1.10.19'
     testImplementation "org.robolectric:robolectric:3.8"
     testImplementation 'junit:junit:4.12'
+    // Espresso instrumentation tests
+    androidTestImplementation 'org.mockito:mockito-core:1.10.19'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    // recycler view
+    // Recycler view
     implementation 'com.android.support:recyclerview-v7:26.1.0'
-    // retrofit
+    // Networking retrofit2
     implementation 'com.squareup.retrofit2:retrofit:2.1.0'
     implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
     implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
-    // rxjava
+    // RxJava
     implementation 'io.reactivex:rxandroid:1.2.1'
     implementation 'io.reactivex:rxjava:1.1.6'
-    // Gson
+    // GSON
     implementation 'com.google.code.gson:gson:2.8.0'
     // Dependency Injection Management
     implementation 'com.google.dagger:dagger:2.15'

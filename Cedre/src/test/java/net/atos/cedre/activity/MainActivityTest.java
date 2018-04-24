@@ -3,8 +3,8 @@ package net.atos.cedre.activity;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.atos.cedre.BuildConfig;
-import com.atos.cedre.R;
+import net.atos.cedre.BuildConfig;
+import net.atos.cedre.R;
 import net.atos.cedre.TestMainApplication;
 import net.atos.cedre.ui.main.MainActivity;
 

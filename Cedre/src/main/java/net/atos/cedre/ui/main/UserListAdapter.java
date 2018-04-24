@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.atos.cedre.R;
+import net.atos.cedre.R;
 import net.atos.cedre.data.network.model.User;
 
 import java.util.List;
